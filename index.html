@@ -1,12 +1,60 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Test</title>
+	<title>Test</title>
+	<style>
+		h1 { 
+			color: #333;
+			font-size: 2rem; 
+			font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+			transition: all .25s;
+			display: inline-block;
+			position: relative;
+		}
+		h1:hover { 
+			color: #ccc;
+			font-size: 3em;
+			transition: all 1s;
+		}
+		h1 span { display: none; }
+		h1:hover span { display: inline; }
+		
+		h1:after { 
+			opacity: 0;
+		}
+		h1:hover:after { 
+			content: attr(title); 
+			position: absolute;
+			top: -16px;
+			left: 0;
+			font-size: 12px;
+			border: 1px solid #333;
+			padding: 5px;
+			opacity: 1;
+			transition: opacity 1s ease-in 1s;
+		}
+		
+		h2 {
+			margin-top: -300px;
+			width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+			transition: all 1s ease-in 0s;
+		}
+		h1:hover + h2 {
+			margin-top: 0;
+			transition: all 1s ease-in 1s;
+		}
+	</style>
 </head>
 
 <body>
-	Hello World is better
+	<h1 title="super">
+	 Hover me!
+	 <span>Infos</span>
+	</h1>
+	<h2>Beat 'em down</h2>
 </body>
 
 </html> 
