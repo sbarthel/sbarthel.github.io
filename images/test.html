@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Test</title>
+	<style>
+		html {
+			font-size: 20px;
+			color: #999;
+			font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		}
+		header { 
+			font-size: 2rem;
+		}
+		section {
+			width: 200px;
+			margin: 1rem auto;
+			text-align: center;
+			font-size: 0.8rem;
+		}
+		div {
+			height: 150px;
+			position: relative;
+			overflow: hidden;
+			display: inline-block;
+		}
+		div img {
+			margin-left: -100px;
+			left: 50%;
+			position: absolute;
+			top: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	 Image Center Test
+	</header>
+	<section>
+		Original width: 200px
+		<img width="200" src="img/berg.jpg" alt="mountain"/>
+	</section>
+	<section>
+		width: 100px
+		<div style="width: 100px">
+			<img width="200" src="img/berg.jpg" alt="mountain"/>
+		</div>
+	</section>
+	<section>
+		width: 150px
+		<div style="width: 150px">
+			<img width="200" src="img/berg.jpg" alt="mountain"/>
+		</div>
+	</section>
+</body>
+</html> 
