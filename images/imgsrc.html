@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+		html {
+			font-size: 20px;
+			color: #999;
+			font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		}
+		header { 
+			font-size: 2rem;
+		}
+		section {
+			width: 100%;
+			max-width: 480px;
+			margin: 1rem auto;
+			border: 1px solid red;
+		}
+		
+		img {
+			max-width: 100%;
+			margin-bottom: 10px;
+		}
+		
+		
+	</style>
+	
+	<script>
+	// Picture element HTML5 shiv
+	document.createElement( "picture" );
+	</script>
+	<script src="picturefill.min.js" async></script>
+	
+</head>
+
+<body>
+	<header>
+	 srcset Test
+	</header>
+	<section>
+	 
+		<img srcset="img/window.jpg 640w, img/text.jpg 480w, img/nature.jpg 320w"
+			sizes="(min-width: 1000px) 50vw, (min-width: 600px) 50vw, 100vw"
+			src="img/berg.JPG"
+			alt="pic"
+		/>
+	 
+	 <!--
+	 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	 -->
+	</section>
+</body>
+</html> 
